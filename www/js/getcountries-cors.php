@@ -41,7 +41,7 @@ $type = 'dmtx'; // Type of barcode
 $width = 640;
 $format = 'png';
 $wq = '4'; // Width of quiet area units
-$datamatrix = "barcode.php?s=" . $type . "&wq=" . $wq . "&f=" . $format . "&w=" . $width . "&d=" . $data;
+$datamatrix = "s=".$type."&wq=".$wq."&f=".$format."&w=".$width."&d=".$data;
 
 echo json_encode($countries = array($datamatrix));
 ?>

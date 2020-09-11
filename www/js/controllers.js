@@ -26,6 +26,7 @@ angular.module('starter.controllers', [])
             $scope.countries = [];
 
             var ajaxRequest = $http.get("https://martplore.com.br/vdroot/getcountries-cors.php");
+            
 
             ajaxRequest.success(function (data, status, headers, config) {
                 $scope.countries = data;
