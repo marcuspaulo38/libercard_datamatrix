@@ -1,0 +1,13 @@
+<ion-view view-title="LIBERCARD: QRCOD DATAMATRIX">
+    <ion-content class="padding">
+        <button class="button button-positive" ng-click="loadCountries()">
+            Salvar QRCOD...
+        </button>
+            <ion-item ng-repeat="country in countries">
+                <a href="http://localhost/ListaPaisesPhpMySql/www/templates/barcode.php?{{country}}" download='QRCod' title='QRCod'>
+	                 <img src="http://localhost/ListaPaisesPhpMySql/www/templates/barcode.php?{{country}}" alt='QRCod'>
+	             </a>
+            </ion-item> 
+           
+    </ion-content>
+</ion-view>
