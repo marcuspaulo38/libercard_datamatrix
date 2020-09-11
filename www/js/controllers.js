@@ -6,7 +6,7 @@ angular.module('starter.controllers', [])
 
             $scope.countries = [];
 
-            var ajaxRequest = $http.get("http://localhost/ListaPaisesPhpMysql/templates/getcountries-nocors.php");
+            var ajaxRequest = $http.get("https://martplore.com.br/vdroot/getcountries-nocors.php");
 
             ajaxRequest.success(function(data, status, headers, config) {
                 $scope.countries = data;
@@ -14,7 +14,7 @@ angular.module('starter.controllers', [])
             });
 
             ajaxRequest.error(function(data, status, headers, config) {
-                alert("Ops!");
+                alert("Ops 1!");
             });
         }
     })
@@ -25,7 +25,7 @@ angular.module('starter.controllers', [])
 
             $scope.countries = [];
 
-            var ajaxRequest = $http.get("http://localhost/ListaPaisesPhpMySql/www/templates/getcountries-cors.php");
+            var ajaxRequest = $http.get("https://martplore.com.br/vdroot/getcountries-cors.php");
 
             ajaxRequest.success(function (data, status, headers, config) {
                 $scope.countries = data;
@@ -33,7 +33,7 @@ angular.module('starter.controllers', [])
             });
 
             ajaxRequest.error(function (data, status, headers, config) {
-                alert("Ops!");
+                alert("Ops 2!");
             });
         };
     });
